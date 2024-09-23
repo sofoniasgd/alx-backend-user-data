@@ -1,0 +1,10 @@
+#!/bin/bash
+# make a directory with name-> argv[1]
+mkdir $1
+# make readme with initial content of argv[1]
+echo $1 > $1/README.md
+# copy github push script(gp2) and python executable scripts(p) to directory
+cp gp2 $1/gp2
+#cp p $1/p
+cd $1
+
